@@ -101,3 +101,6 @@ Open a pull request.
 📄 License
 
 This project is licensed under the MIT License.
+📩 Contact
+
+For queries, reach out at katiyarayushi1127@gmail.com.
