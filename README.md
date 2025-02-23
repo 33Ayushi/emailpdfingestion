@@ -34,8 +34,6 @@ Authentication: NextAuth.js (if implemented)
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/your-repo/email-pdf-ingestion.git
-cd email-pdf-ingestion
 
 2️⃣ Install Dependencies
 
@@ -44,11 +42,6 @@ npm install  # or yarn install
 3️⃣ Configure Environment Variables
 
 Create a .env file and add:
-
-DATABASE_URL="postgresql://user:password@localhost:5432/dbname"
-EMAIL_PROVIDER= "imap/pop3/gmail/outlook"
-EMAIL_USERNAME= "your-email@example.com"
-EMAIL_PASSWORD= "your-password"
 
 4️⃣ Run Migrations
 
