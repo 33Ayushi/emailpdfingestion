@@ -1,106 +1,36 @@
-📌 Overview
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This Next.js application automates email ingestion, fetching emails via IMAP, POP3, Gmail API, and Outlook to extract PDF attachments. It stores email data and attachments locally and in a PostgreSQL database using Prisma ORM. The app ensures seamless data flow, real-time processing, and high scalability.
+## Getting Started
 
-🔥 Features
+First, run the development server:
 
-Automated Email Fetching: Supports IMAP, POP3, Gmail API, and Outlook.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-PDF Extraction: Detects and saves PDF attachments.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Database Integration: Uses PostgreSQL with Prisma ORM.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-Next.js API Routes: Handles data processing efficiently.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Error Handling: Provides robust logging and validation.
+## Learn More
 
-Dynamic UI: Built with React & TailwindCSS for smooth UX.
+To learn more about Next.js, take a look at the following resources:
 
-🛠 Tech Stack
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Framework: Next.js (React, TypeScript)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Backend: Node.js, Next.js API Routes
+## Deploy on Vercel
 
-Database: PostgreSQL, Prisma ORM
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Email Integration: IMAP, POP3, Gmail API, Outlook API
-
-Styling: TailwindCSS
-
-Authentication: NextAuth.js (if implemented)
-
-🚀 Installation & Setup
-
-1️⃣ Clone the Repository
-
-
-2️⃣ Install Dependencies
-
-npm install  # or yarn install
-
-3️⃣ Configure Environment Variables
-
-Create a .env file and add:
-
-4️⃣ Run Migrations
-
-npx prisma migrate dev --name init
-
-5️⃣ Start the Application
-
-npm run dev  # or yarn dev
-
-📡 API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/api/email-ingestion
-
-Fetch emails and store attachments
-
-GET
-
-/api/emails
-
-Retrieve stored emails from DB
-
-📄 Folder Structure
-
-📂 email-pdf-ingestion
-├── 📂 src
-│   ├── 📂 app
-│   │   ├── 📂 api
-│   │   │   ├── 📂 email-ingestion
-│   │   │   │   ├── route.ts
-│   ├── 📂 components
-│   ├── 📂 utils
-│   ├── 📜 page.tsx
-├── 📂 prisma
-│   ├── schema.prisma
-├── 📜 next.config.js
-├── 📜 package.json
-├── 📜 README.md
-
-📌 Contributing
-
-Fork the repo.
-
-Create a new branch (feature/new-feature).
-
-Commit changes and push.
-
-Open a pull request.
-
-📄 License
-
-This project is licensed under the MIT License.
-📩 Contact
-
-For queries, reach out at katiyarayushi1127@gmail.com.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
